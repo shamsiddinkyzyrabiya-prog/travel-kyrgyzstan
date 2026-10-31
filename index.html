@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the beautiful places, mountains, lakes and culture of Kyrgyzstan.">
+    <title>Travel Kyrgyzstan | Discover Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">🌍 Travel<span>KG</span></a>
+    <nav>
+        <a href="#home" data-ky="Башкы бет" data-en="Home">Башкы бет</a>
+        <a href="#destinations" data-ky="Кооз жерлер" data-en="Destinations">Кооз жерлер</a>
+        <a href="#culture" data-ky="Маданият" data-en="Culture">Маданият</a>
+        <a href="#about" data-ky="Биз жөнүндө" data-en="About">Биз жөнүндө</a>
+    </nav>
+    <button id="languageBtn" class="language-btn">KG / EN</button>
+</header>
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow"
+               data-ky="БОРБОРДУК АЗИЯНЫН ЖҮРӨГҮ"
+               data-en="THE HEART OF CENTRAL ASIA">
+               БОРБОРДУК АЗИЯНЫН ЖҮРӨГҮ
+            </p>
+            <h1 data-ky="Кыргызстанды<br>бирге ачалы"
+                data-en="Discover<br>Kyrgyzstan">
+                Кыргызстанды<br>бирге ачалы
+            </h1>
+            <p class="hero-text"
+               data-ky="Асман тиреген тоолор, тунук көлдөр жана унутулгус саякаттар дүйнөсүнө кош келиңиз."
+               data-en="Explore majestic mountains, crystal-clear lakes and unforgettable adventures.">
+               Асман тиреген тоолор, тунук көлдөр жана унутулгус саякаттар дүйнөсүнө кош келиңиз.
+            </p>
+            <a href="#destinations" class="primary-btn"
+               data-ky="Саякатты баштоо →"
+               data-en="Start Exploring →">Саякатты баштоо →</a>
+        </div>
+        <div class="hero-bottom">
+            <span>41°12′ N — 74°46′ E</span>
+            <span data-ky="Кыргызстан — сенин кийинки укмуштуу окуяң"
+                  data-en="Kyrgyzstan — your next adventure">
+                Кыргызстан — сенин кийинки укмуштуу окуяң
+            </span>
+        </div>
+    </section>
+    <section class="destinations section" id="destinations">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow" data-ky="ИЗИЛДӨӨНҮ БАШТА"
+                   data-en="START EXPLORING">ИЗИЛДӨӨНҮ БАШТА</p>
+                <h2 data-ky="Кооз жерлер" data-en="Popular Destinations">
+                    Кооз жерлер
+                </h2>
+            </div>
+            <p data-ky="Кыргызстандын эң керемет жерлери менен тааныш."
+               data-en="Discover the most beautiful places in Kyrgyzstan.">
+                Кыргызстандын эң керемет жерлери менен тааныш.
+            </p>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput"
+                   placeholder="Жерди издөө..."
+                   aria-label="Search destinations">
+            <button id="searchBtn"
+                    data-ky="Издөө"
+                    data-en="Search">Издөө</button>
+        </div>
+        <div class="cards" id="destinationCards">
+            <article class="card" data-search="ыссык-көл issyk kul lake көл">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                     alt="Табияттын кооз көрүнүшү">
+                <div class="card-content">
+                    <span class="location">📍 Ысык-Көл облусу</span>
+                    <h3 data-ky="Ысык-Көл" data-en="Issyk-Kul">Ысык-Көл</h3>
+                    <p data-ky="Көл жээгинде эс алып, тоолордун кооздугун сез."
+                       data-en="Relax by the lake and enjoy the mountain scenery.">
+                       Көл жээгинде эс алып, тоолордун кооздугун сез.
+                    </p>
+                    <button class="details-btn"
+                            data-ky="Кененирээк →"
+                            data-en="Learn More →"
+                            data-title-ky="Ысык-Көл"
+                            data-title-en="Issyk-Kul"
+                            data-description-ky="Ысык-Көл — Кыргызстандагы эң белгилүү көлдөрдүн бири. Бул жер пляжда эс алуу, тоо көрүнүштөрүн көрүү жана жаратылыш менен таанышуу үчүн популярдуу."
+                            data-description-en="Issyk-Kul is one of Kyrgyzstan's best-known lakes. It is popular for lakeside relaxation, mountain scenery and outdoor adventures.">
+                        Кененирээк →
+                    </button>
+                    <button class="favorite-btn" aria-label="Сүйүктүүлөргө кошуу">♡</button>
+                </div>
+            </article>
+            <article class="card" data-search="ала-арча ala archa тоо mountains">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                     alt="Бийик тоолор">
+                <div class="card-content">
+                    <span class="location">📍 Чүй облусу</span>
+                    <h3 data-ky="Ала-Арча" data-en="Ala-Archa">Ала-Арча</h3>
+                    <p data-ky="Бийик тоолор, таза аба жана укмуштуу жаратылыш."
+                       data-en="Majestic peaks, fresh air and incredible nature.">
+                       Бийик тоолор, таза аба жана укмуштуу жаратылыш.
+                    </p>
+                   <button class="details-btn"
+                     onclick="openIssykKul()">
+                     Кененирээк →
+                   </button>
+                    <button class="favorite-btn" aria-label="Сүйүктүүлөргө кошуу">♡</button>
+                </div>
+            </article>
+            <article class="card" data-search="сон-көл song kol lake боз үй yurt">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=85"
+                     alt="Жаратылыш жана тоо көрүнүшү">
+                <div class="card-content">
+                    <span class="location">📍 Нарын облусу</span>
+                    <h3 data-ky="Сон-Көл" data-en="Song-Kol">Сон-Көл</h3>
+                    <p data-ky="Көчмөндөрдүн турмушу жана бийик тоолуу көл."
+                       data-en="Experience nomadic traditions beside an alpine lake.">
+                       Көчмөндөрдүн турмушу жана бийик тоолуу көл.
+                    </p>
+                    <button class="details-btn"
+                            data-ky="Кененирээк →"
+                            data-en="Learn More →"
+                            data-title-ky="Сон-Көл"
+                            data-title-en="Song-Kol"
+                            data-description-ky="Сон-Көл — Нарын облусундагы бийик тоолуу көл. Жай мезгилинде жайлоолорду, боз үйлөрдү жана көчмөн маданиятын көрүүгө болот."
+                            data-description-en="Song-Kol is a high-altitude lake in Naryn Region. In summer, visitors can experience mountain pastures, yurts and nomadic culture.">
+                        Кененирээк →
+                    </button>
+                    <button class="favorite-btn" aria-label="Сүйүктүүлөргө кошуу">♡</button>
+                </div>
+            </article>
+            <p id="noResults" hidden
+               data-ky="Издөө боюнча жер табылган жок."
+               data-en="No destinations found.">
+                Издөө боюнча жер табылган жок.
+            </p>
+        </div>
+    </section>
+    <section class="culture section" id="culture">
+        <p class="eyebrow" data-ky="БИЗДИН МУРАСЫБЫЗ"
+           data-en="OUR HERITAGE">БИЗДИН МУРАСЫБЫЗ</p>
+        <h2 data-ky="Табият. Маданият. Эркиндик."
+            data-en="Nature. Culture. Freedom.">
+            Табият. Маданият. Эркиндик.
+        </h2>
+        <p data-ky="Кыргыз элинин меймандостугун, улуттук салттарын жана кайталангыс жаратылышын тааны."
+           data-en="Discover Kyrgyz hospitality, timeless traditions and extraordinary landscapes.">
+            Кыргыз элинин меймандостугун, улуттук салттарын жана кайталангыс жаратылышын тааны.
+        </p>
+    </section>
+    <section class="about section" id="about">
+        <h2 data-ky="Travel Kyrgyzstan жөнүндө"
+            data-en="About Travel Kyrgyzstan">
+            Travel Kyrgyzstan жөнүндө
+        </h2>
+        <p data-ky="Биздин максат — Кыргызстанды дүйнөгө таанытуу жана адамдарга саякат үчүн жаңы багыттарды табууга жардам берүү."
+           data-en="Our mission is to introduce Kyrgyzstan to the world and help travelers discover new destinations.">
+            Биздин максат — Кыргызстанды дүйнөгө таанытуу жана адамдарга саякат үчүн жаңы багыттарды табууга жардам берүү.
+        </p>
+    </section>
+</main>
+<footer>
+    <a href="#" class="logo">🌍 Travel<span>KG</span></a>
+    <p>© 2026 Travel Kyrgyzstan · Made with love 🇰🇬</p>
+</footer>
+<div class="modal" id="detailsModal" role="dialog"
+     aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-content">
+        <button class="close-modal" id="closeModal"
+                aria-label="Close">✕</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+<div id="issykModal" class="modal" hidden>
+    <div class="modal-content">
+        <button onclick="closeIssykKul()" class="close-modal">✕</button>
+        <h2>🏞️ Ысык-Көл — Кыргызстандын бермети</h2>
+        <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85"
+            alt="Табияттын кооз көрүнүшү"
+            style="width:100%; border-radius:12px; margin:15px 0;"
+        >
+        <h3>📍 Жайгашкан жери</h3>
+        <p>Ысык-Көл Кыргызстандын түндүк-чыгышында жайгашкан. Көлдүн айланасын бийик тоолор курчап турат.</p>
+        <h3>🌊 Көл жөнүндө</h3>
+        <p>Ысык-Көл — Борбордук Азиядагы эң белгилүү көлдөрдүн бири. Көлдүн суусу туздуу болгондуктан, ал кышында толугу менен тоңбойт. Жай мезгилинде туристтер көл жээгинде эс алып, жаратылыштын кооздугун көрүшөт.</p>
+        <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+            alt="Бийик тоолор"
+            style="width:100%; border-radius:12px; margin:15px 0;"
+        >
+        <h3>🏔️ Эмне көрүүгө болот?</h3>
+        <ul>
+            <li>Чолпон-Ата шаары жана көл жээги.</li>
+            <li>Каракол шаары жана тоолуу аймактар.</li>
+            <li>Жети-Өгүздүн кызыл аскалары.</li>
+            <li>Көлдүн кооз пляждары.</li>
+        </ul>
+        <h3>🎯 Эмне кылса болот?</h3>
+        <p>Көлдө сүзүүгө, кайык менен сейилдөөгө, тоого чыгууга жана кыргыздын улуттук тамактарынан даам татууга болот. Тоолуу жерлерге барганда аба ырайын жана коопсуздук шарттарын алдын ала текшерүү маанилүү.</p>
+        <h3>📅 Качан барган жакшы?</h3>
+        <p>Көл жээгинде эс алуу үчүн жай мезгили ыңгайлуу. Тоолуу аймактарга барууда мезгилге жараша даярдануу керек.</p>
+    </div>
+</div>
+</body>
+</html>
